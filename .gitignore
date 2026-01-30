@@ -33,6 +33,7 @@ ENV/
 *.swo
 *~
 .DS_Store
+.kiro/
 
 # Testing
 .pytest_cache/
@@ -40,16 +41,22 @@ ENV/
 htmlcov/
 .tox/
 .hypothesis/
+tests/
 
 # Output directories (生成的文件)
 extracted_frames/
 stitched_frames/
+
+# Video files (视频文件)
 segments/*.mp4
 segments/*.avi
 segments/*.jsonl
 
-# Reports (可选：如果不想提交报告)
+# Reports (报告文件)
 processing_report.txt
+
+# Examples output
+examples/
 
 # Logs
 *.log
@@ -69,5 +76,5 @@ Desktop.ini
 .AppleDouble
 .LSOverride
 
-# Config (如果包含敏感信息)
+# Config (如果包含敏感信息，取消下面的注释)
 # config.yaml
