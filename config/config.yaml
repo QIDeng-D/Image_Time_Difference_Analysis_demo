@@ -1,0 +1,22 @@
+# Video Frame Stitcher Configuration
+
+# Directory containing input video segments
+input_dir: "./segments"
+
+# Directory for stitched output frames
+output_dir: "./stitched_frames"
+
+# Directory for intermediate extracted frames
+extracted_frames_dir: "./extracted_frames"
+
+# Number of frames between each extracted frame (e.g., 100 means extract every 100th frame)
+sampling_interval: 100
+
+# Output image format: 'png' or 'jpg'
+output_format: "png"
+
+# Glob pattern for camera 0 video files
+cam0_pattern: "stereo_cam0_sbs_*.mp4"
+
+# Glob pattern for camera 1 video files
+cam1_pattern: "stereo_cam1_sbs_*.mp4"

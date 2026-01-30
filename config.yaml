@@ -1,0 +1,43 @@
+# Video Frame Stitcher Configuration
+
+# Directory containing input video segments
+input_dir: "./segments"
+
+# Directory for stitched output frames
+output_dir: "./stitched_frames"
+
+# Directory for intermediate extracted frames
+extracted_frames_dir: "./extracted_frames"
+
+# Number of frames between each extracted frame (e.g., 100 means extract every 100th frame)
+sampling_interval: 100
+
+# Output image format: 'png' or 'jpg'
+output_format: "png"
+
+# Glob pattern for camera 0 video files
+cam0_pattern: "stereo_cam0_sbs_*.mp4"
+
+# Glob pattern for camera 1 video files
+cam1_pattern: "stereo_cam1_sbs_*.mp4"
+
+# Maximum allowed frame count difference percentage (0-100)
+frame_count_threshold: 5.0
+
+# Enable timestamp analysis
+timestamp_analysis_enabled: true
+
+# Time sync threshold in milliseconds
+timestamp_sync_threshold_ms: 50.0
+
+# Number of sample points for drift analysis
+timestamp_sample_points: 20
+
+# Enable frame number overlay on images
+enable_frame_overlay: true
+
+# Font size for frame number overlay text
+overlay_font_size: 32
+
+# Position of overlay: 'top-left', 'top-right', 'bottom-left', 'bottom-right'
+overlay_position: "top-left"
